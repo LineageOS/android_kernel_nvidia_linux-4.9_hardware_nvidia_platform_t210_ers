@@ -114,12 +114,12 @@
 		* inherent_gain = "";
 		* Gain obtained inherently from mode (ie. pixel binning)
 		*
-		* min_gain_val = "";
-		* max_gain_val = "";
+		* min_gain_val = ""; (floor to 6 decimal places)
+		* max_gain_val = ""; (floor to 6 decimal places)
 		* Gain limits for mode
 		*
-		* min_exp_time = "";
-		* max_exp_time = "";
+		* min_exp_time = ""; (ceil to integer)
+		* max_exp_time = ""; (ceil to integer)
 		* Exposure Time limits for mode (us)
 		*
 		*
@@ -155,8 +155,8 @@
 			max_hdr_ratio = "64";
 			min_framerate = "1.462526";
 			max_framerate = "30";
-			min_exp_time = "13";
-			max_exp_time = "683709";
+			min_exp_time = "11";
+			max_exp_time = "683645";
 			embedded_metadata_height = "4";
 		};
 
@@ -182,8 +182,8 @@
 			max_hdr_ratio = "64";
 			min_framerate = "1.462526";
 			max_framerate = "30";
-			min_exp_time = "13";
-			max_exp_time = "683709";
+			min_exp_time = "11";
+			max_exp_time = "683645";
 			embedded_metadata_height = "4";
 		};
 
@@ -209,8 +209,8 @@
 			max_hdr_ratio = "64";
 			min_framerate = "1.462526";
 			max_framerate = "30";
-			min_exp_time = "13";
-			max_exp_time = "683709";
+			min_exp_time = "11";
+			max_exp_time = "683645";
 			embedded_metadata_height = "4";
 		};
 
@@ -236,8 +236,8 @@
 			max_hdr_ratio = "64";
 			min_framerate = "1.462526";
 			max_framerate = "30";
-			min_exp_time = "13";
-			max_exp_time = "683709";
+			min_exp_time = "11";
+			max_exp_time = "683645";
 			embedded_metadata_height = "4";
 		};
 
@@ -263,8 +263,8 @@
 			max_hdr_ratio = "64";
 			min_framerate = "1.462526";
 			max_framerate = "30";
-			min_exp_time = "13";
-			max_exp_time = "683709";
+			min_exp_time = "11";
+			max_exp_time = "683645";
 			embedded_metadata_height = "4";
 		};
 
@@ -290,8 +290,8 @@
 			max_hdr_ratio = "64";
 			min_framerate = "1.462526";
 			max_framerate = "30";
-			min_exp_time = "13";
-			max_exp_time = "683709";
+			min_exp_time = "11";
+			max_exp_time = "683645";
 			embedded_metadata_height = "4";
 		};
 
@@ -317,8 +317,8 @@
 			max_hdr_ratio = "64";
 			min_framerate = "1.462526";
 			max_framerate = "120";
-			min_exp_time = "13";
-			max_exp_time = "683709";
+			min_exp_time = "11";
+			max_exp_time = "683645";
 			embedded_metadata_height = "4";
 		};
 	};
