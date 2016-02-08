@@ -1110,6 +1110,6 @@
 
 	serial@70006200 {
 		dma-names = "tx";
-		nvidia,adjust-baud-rates = <921600 (100)>;
+		nvidia,adjust-baud-rates = <921600 921600 100>;
 	};
 };
