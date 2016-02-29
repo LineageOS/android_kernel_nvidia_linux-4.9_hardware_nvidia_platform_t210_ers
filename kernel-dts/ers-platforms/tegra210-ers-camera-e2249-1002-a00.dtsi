@@ -660,10 +660,6 @@
 				compatible = "sensor,rear";
 				badge_info = "e2249_rear_P13N05B";
 
-				sensor {
-					profile = <&imx214_2>;
-					platformdata = "t210ref_imx214_pdata";
-				};
 				focuser {
 					profile = <&dw9714_1>;
 					platformdata = "t210ref_dw9714_pdata";
