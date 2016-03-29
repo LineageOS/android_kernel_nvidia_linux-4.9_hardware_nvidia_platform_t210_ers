@@ -83,6 +83,13 @@
 			gpio {
 				nvidia,io-pad-init-voltage = <IO_PAD_VOLTAGE_1_8V>;
 			};
+
+			sdmmc1 {
+				nvidia,enable-dynamic-pad-voltage;
+			};
+			sdmmc3 {
+				nvidia,enable-dynamic-pad-voltage;
+			};
 		};
 	};
 
