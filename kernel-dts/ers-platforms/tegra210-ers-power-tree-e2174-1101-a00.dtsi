@@ -16,9 +16,9 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include "tegra210-ers-pmic-e2174-1101-a00.dtsi"
-#include "tegra210-ers-fixed-e2174-1101-a00.dtsi"
-#include "tegra210-ers-power-dvfs-e2174-1101-a00.dtsi"
+#include <t210-common-platforms/tegra210-ers-pmic-e2174-1101-a00.dtsi>
+#include <t210-common-platforms/tegra210-ers-fixed-e2174-1101-a00.dtsi>
+#include <t210-common-platforms/tegra210-ers-power-dvfs-e2174-1101-a00.dtsi>
 
 / {
 	i2c@7000d000 {

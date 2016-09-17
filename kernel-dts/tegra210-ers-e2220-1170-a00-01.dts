@@ -14,7 +14,7 @@
  */
 
 #include "tegra210-ers-e2220-1170-a00-00-common.dts"
-#include "tegra210-platforms/tegra210-ers-emc.dtsi"
+#include "ers-platforms/tegra210-ers-emc.dtsi"
 
 / {
 	nvidia,dtsfilename = __FILE__;

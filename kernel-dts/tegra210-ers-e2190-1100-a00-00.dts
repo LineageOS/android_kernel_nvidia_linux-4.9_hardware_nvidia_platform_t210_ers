@@ -25,22 +25,22 @@
 /memreserve/ 0x80000000 0x00020000;
 
 #include "tegra210-ers-common.dtsi"
-#include "tegra210-platforms/tegra210-ers-extgpio-e2220-1170-a00.dtsi"
-#include "tegra210-platforms/tegra210-ers-power-tree-e2174-1101-a00.dtsi"
-#include "tegra210-platforms/tegra210-ers-sensor-e2160-1000-a00.dtsi"
-#include "tegra210-platforms/tegra210-ers-gpio-e2190-1100-a00.dtsi"
-#include "tegra210-platforms/tegra210-pinmux-drive-sdmmc-common.dtsi"
-#include "tegra210-platforms/tegra210-ers-pinmux-e2190-1100-a00.dtsi"
-#include "tegra210-platforms/tegra210-comms.dtsi"
-#include "tegra210-platforms/tegra210-sdhci.dtsi"
-#include "tegra210-platforms/tegra210-audio.dtsi"
+#include "ers-platforms/tegra210-ers-extgpio-e2220-1170-a00.dtsi"
+#include "ers-platforms/tegra210-ers-power-tree-e2174-1101-a00.dtsi"
+#include "ers-platforms/tegra210-ers-sensor-e2160-1000-a00.dtsi"
+#include "ers-platforms/tegra210-ers-gpio-e2190-1100-a00.dtsi"
+#include <t210-common-platforms/tegra210-pinmux-drive-sdmmc-common.dtsi>
+#include "ers-platforms/tegra210-ers-pinmux-e2190-1100-a00.dtsi"
+#include <t210-common-platforms/tegra210-comms.dtsi>
+#include <tegra210-soc/tegra210-sdhci.dtsi>
+#include <tegra210-soc/tegra210-audio.dtsi>
 #include "panels/panel-a-wuxga-8-0.dtsi"
-#include "tegra210-platforms/tegra210-ers-hdmi-e2190-1100-a00.dtsi"
-#include "tegra210-platforms/tegra210-ers-keys-e2220-1170-a00.dtsi"
-#include "tegra210-platforms/tegra210-edp.dtsi"
-#include "tegra210-platforms/tegra210-ers-thermal-nct72-e2220-1170-a00.dtsi"
-#include "tegra210-platforms/tegra210-thermal-Tboard-Tdiode.dtsi"
-#include "tegra210-platforms/tegra210-ers-clk-init.dtsi"
+#include <t210-common-platforms/tegra210-ers-hdmi-e2190-1100-a00.dtsi>
+#include <t210-common-platforms/tegra210-ers-keys-e2220-1170-a00.dtsi>
+#include <tegra210-soc/tegra210-edp.dtsi>
+#include <t210-common-platforms/tegra210-ers-thermal-nct72-e2220-1170-a00.dtsi>
+#include <tegra210-soc/tegra210-thermal-Tboard-Tdiode.dtsi>
+#include <t210-common-platforms/tegra210-ers-clk-init.dtsi>
 
 / {
 	model = "e2190";
