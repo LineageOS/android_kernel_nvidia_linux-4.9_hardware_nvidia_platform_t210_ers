@@ -911,8 +911,10 @@
 		extcon-cables = <&bq2419x 0>;
 		extcon-cable-names = "vbus";
 		#extcon-cells = <1>;
-		status = "disabled";
-		dt-override-status-odm-data = <0x01000000 0x01000000>;
+		status = "okay";
+		phys =  <&tegra_padctl_uphy TEGRA_PADCTL_UPHY_UTMI_P(0)>,
+			<&tegra_padctl_uphy TEGRA_PADCTL_UPHY_USB3_P(0)>;
+		phy-names = "usb2", "usb3";
 	};
 
 	xotg {
@@ -920,7 +922,6 @@
 		extcon-cable-names = "id";
 		#extcon-cells = <1>;
 		status = "disabled";
-		dt-override-status-odm-data = <0x01000000 0x01000000>;
 	};
 
 	gpio-keys {
