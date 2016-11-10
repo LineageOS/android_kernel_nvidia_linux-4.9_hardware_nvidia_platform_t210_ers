@@ -35,6 +35,7 @@
 					gpio-controller;
 					#gpio-cells = <2>;
 					reg = <0x74>;
+					vcc-supply = <&battery_reg>;
 				};
 
 				pca9539_75: gpio@75 {
@@ -42,6 +43,7 @@
 					gpio-controller;
 					#gpio-cells = <2>;
 					reg = <0x75>;
+					vcc-supply = <&battery_reg>;
 				};
 
 				pca9539_76: gpio@76 {
@@ -49,6 +51,7 @@
 					gpio-controller;
 					#gpio-cells = <2>;
 					reg = <0x76>;
+					vcc-supply = <&battery_reg>;
 				};
 			};
 		};
