@@ -911,6 +911,11 @@
 			<&tegra_padctl_uphy TEGRA_PADCTL_UPHY_USB3_P(3)>;
 		phy-names = "utmi-0", "utmi-1", "utmi-2", "utmi-3",
 				"usb3-0", "usb3-1", "usb3-2", "usb3-3";
+		nvidia,pmc-wakeup =
+			<&tegra_pmc
+				PMC_WAKE_TYPE_EVENT 41 PMC_TRIGGER_TYPE_HIGH>,
+			<&tegra_pmc
+				PMC_WAKE_TYPE_EVENT 44 PMC_TRIGGER_TYPE_HIGH>;
 	};
 
 	xudc@700d0000 {

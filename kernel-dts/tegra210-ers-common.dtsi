@@ -20,6 +20,7 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 #include <dt-bindings/gpio/tegra-gpio.h>
 #include <dt-bindings/padctrl/tegra210-pads.h>
+#include <dt-bindings/soc/tegra-pmc.h>
 #include <tegra210-soc/tegra210-prods.dtsi>
 #include <t210-common-platforms/tegra210-ers-touch-e1937-1000-a00.dtsi>
 #include <tegra210-soc/tegra210-modem-common.dtsi>
@@ -47,6 +48,11 @@
 	serial@70006300 {
 		compatible = "nvidia,tegra114-hsuart";
 		status = "okay";
+	};
+
+	rtc {
+		nvidia,pmc-wakeup = <&tegra_pmc PMC_WAKE_TYPE_EVENT 16
+				     PMC_TRIGGER_TYPE_HIGH>;
 	};
 
 	pmc@7000e400 {
