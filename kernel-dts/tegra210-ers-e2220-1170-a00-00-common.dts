@@ -63,6 +63,10 @@
 	#address-cells = <2>;
 	#size-cells = <2>;
 
+	dvfs {
+		compatible = "nvidia,tegra210-dvfs";
+	};
+
 	firmware {
 		android {
 			compatible = "android,firmware";
