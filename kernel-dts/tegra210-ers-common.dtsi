@@ -24,6 +24,10 @@
 #include <t210-common-platforms/tegra210-ers-touch-e1937-1000-a00.dtsi>
 #include <tegra210-soc/tegra210-modem-common.dtsi>
 
+#define EXTCON_NONE             0
+#define EXTCON_USB              1
+#define EXTCON_USB_Host         2
+
 / {
 	nvidia,dtbbuildtime = __DATE__, __TIME__;
 
@@ -76,7 +80,7 @@
 			extcon-gpio,name = "ID";
 			gpio = <&max77620 0 0>;
 			extcon-gpio,connection-state-low;
-			extcon-gpio,cable-name = "USB-Host";
+			extcon-gpio,supported-cable = <EXTCON_USB_Host EXTCON_NONE>;
 			#extcon-cells = <1>;
 		};
 	};
