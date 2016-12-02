@@ -51,6 +51,7 @@
 #include <dt-bindings/sound/tegra-asoc-alt.h>
 #include <dt-bindings/platform/t210/t210.h>
 #include <dt-bindings/reset/tegra210-car.h>
+#include <t210-common-platforms/tegra210-cpufreq.dtsi>
 
 / {
 	model = "e2220";
