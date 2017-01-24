@@ -48,12 +48,22 @@
 			status = "okay";
 			#address-cells = <1>;
 			#size-cells = <0>;
+#ifdef KERNEL_VERSION_3_18
+#include <dt-bindings/clk/tegra210-clk.h>
+			imx214@1a {
+				clocks = <&tegra_car TEGRA210_CLK_ID_CLK_OUT_3>;
+				clock-names = "mclk";
+			};
+#else
+			imx214@1a {
+				clocks = <&tegra_car TEGRA210_CLK_CLK_OUT_3>;
+				clock-names = "mclk";
+			};
+#endif
 			imx214@1a {
 				compatible = "nvidia,imx214";
 				reg = <0x1a>;
 
-				clocks = <&tegra_car TEGRA210_CLK_ID_CLK_OUT_3>;
-				clock-names = "mclk";
 				clock-frequency = <24000000>;
 
 				/* Physical dimensions of sensor */
@@ -392,6 +402,18 @@
 				};
 			};
 
+#ifdef KERNEL_VERSION_3_18
+#include <dt-bindings/clk/tegra210-clk.h>
+			ov5693_c@36 {
+				clocks = <&tegra_car TEGRA210_CLK_ID_CLK_OUT_3>;
+				clock-names = "mclk";
+			};
+#else
+			ov5693_c@36 {
+				clocks = <&tegra_car TEGRA210_CLK_CLK_OUT_3>;
+				clock-names = "mclk";
+			};
+#endif
 			ov5693_c@36 {
 				compatible = "nvidia,ov5693";
 				/* I2C device address */
@@ -408,8 +430,6 @@
 				/* ie. clocks, io pins, power sources */
 				/* mclk-index indicates the index of the */
 				/* mclk-name with in the clock-names array */
-				clocks = <&tegra_car TEGRA210_CLK_ID_CLK_OUT_3>;
-				clock-names = "mclk";
 				clock-frequency = <24000000>;
 
 				mclk = "cam_mclk1";
