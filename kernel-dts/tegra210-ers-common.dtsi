@@ -21,7 +21,7 @@
 #include <dt-bindings/gpio/tegra-gpio.h>
 #include <dt-bindings/soc/tegra-pmc.h>
 #include <tegra210-soc/tegra210-prods.dtsi>
-#include <t210-common-platforms/mods-simple-bus.dtsi>
+#include <tegra210-soc/mods-simple-bus.dtsi>
 #include <t210-common-platforms/tegra210-ers-touch-e1937-1000-a00.dtsi>
 #include <tegra210-soc/tegra210-modem-common.dtsi>
 #include <tegra210-soc/tegra210-trusty.dtsi>
