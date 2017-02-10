@@ -40,7 +40,6 @@
 #include <tegra210-soc/tegra210-edp.dtsi>
 #include <t210-common-platforms/tegra210-ers-thermal-nct72-e2220-1170-a00.dtsi>
 #include <tegra210-soc/tegra210-thermal-Tboard-Tdiode.dtsi>
-#include <t210-common-platforms/tegra210-ers-clk-init.dtsi>
 
 / {
 	model = "e2190";
