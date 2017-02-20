@@ -29,7 +29,6 @@
 #include "ers-platforms/tegra210-ers-power-tree-e2174-1101-a00.dtsi"
 #include "ers-platforms/tegra210-ers-sensor-e2160-1000-a00.dtsi"
 #include "ers-platforms/tegra210-ers-gpio-e2190-1100-a00.dtsi"
-#include <t210-common-platforms/tegra210-pinmux-drive-sdmmc-common.dtsi>
 #include "ers-platforms/tegra210-ers-pinmux-e2190-1100-a00.dtsi"
 #include <t210-common-platforms/tegra210-comms.dtsi>
 #include <tegra210-soc/tegra210-sdhci.dtsi>
@@ -135,11 +134,6 @@
 		cd-gpios = <&gpio TEGRA_GPIO(Z, 2) 0>;
 		vddio_sdmmc-supply = <&max77620_ldo2>;
 		nvidia,update-pinctrl-settings;
-		pinctrl-names = "sdmmc_schmitt_enable", "sdmmc_schmitt_disable", "sdmmc_clk_schmitt_enable", "sdmmc_clk_schmitt_disable";
-		pinctrl-0 = <&sdmmc3_schmitt_enable_state>;
-		pinctrl-1 = <&sdmmc3_schmitt_disable_state>;
-		pinctrl-2 = <&sdmmc3_clk_schmitt_enable_state>;
-		pinctrl-3 = <&sdmmc3_clk_schmitt_disable_state>;
 		status = "disabled";
 	};
 
@@ -159,11 +153,6 @@
 		vddio_sd_slot-supply = <&en_vdd_sd>;
 		uhs-mask = <0x1c>;
 		nvidia,update-pinctrl-settings;
-		pinctrl-names = "sdmmc_schmitt_enable", "sdmmc_schmitt_disable", "sdmmc_clk_schmitt_enable", "sdmmc_clk_schmitt_disable";
-		pinctrl-0 = <&sdmmc1_schmitt_enable_state>;
-		pinctrl-1 = <&sdmmc1_schmitt_disable_state>;
-		pinctrl-2 = <&sdmmc1_clk_schmitt_enable_state>;
-		pinctrl-3 = <&sdmmc1_clk_schmitt_disable_state>;
 		nvidia,sd-device;
 		wp-gpios = <&gpio TEGRA_GPIO(Z, 3) 0>;
 		status = "okay";
