@@ -660,29 +660,6 @@
 		};
 	};
 
-        udc@7d000000 {
-                nvidia,port-otg;
-                nvidia,charging-supported;
-                nvidia,enable-pmu-vbus-detection;
-		nvidia,turn-off-vbus-in-lp0;
-                nvidia,id-detection-type = <1>;
-                extcon-cables = <&bq2419x 0>;
-                extcon-cable-names = "vbus";
-                #extcon-cells = <1>;
-                status = "disabled";
-		dt-override-status-odm-data = <0x01000000 0x00000000>;
-        };
-
-        otg@7d000000 {
-                nvidia,enable-pmu-vbus-detection;
-                nvidia,id-detection-type = <1>;
-                extcon-cables = <&bq2419x 0 &id_gpio_extcon 0>;
-                extcon-cable-names = "vbus", "id";
-                #extcon-cells = <1>;
-                status = "disabled";
-		dt-override-status-odm-data = <0x01000000 0x00000000>;
-        };
-
 	/* Put common control config here */
 	xusb_pad_ctl: xusb_padctl {
 		nvidia,lane-map = <0x14>;
