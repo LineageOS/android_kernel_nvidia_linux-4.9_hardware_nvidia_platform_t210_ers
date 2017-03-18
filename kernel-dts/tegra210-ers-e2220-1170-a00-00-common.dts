@@ -1224,6 +1224,10 @@
 		nvidia,adjust-baud-rates = <921600 921600 100>;
 	};
 
+	pwm@7000a000 {
+		nvidia,no-clk-sleeping-in-ops;
+	};
+
 	pwm@70110000 {
 		pwm-regulator = <&cpu_ovr_reg>;
 		status = "okay";
