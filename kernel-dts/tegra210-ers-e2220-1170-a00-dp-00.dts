@@ -22,7 +22,7 @@
 	nvidia,dtsfilename = __FILE__;
 	host1x {
 		sor1 {
-			nvidia,sor1-output-type = "dp";
+			nvidia,active-panel = <&sor1_dp_display>;
 			dp-display {
 				nvidia,is_ext_dp_panel = <1>;
 			};
