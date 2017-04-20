@@ -62,10 +62,7 @@
 	pmc@7000e400 {
 		nvidia,invert-interrupt;
 		nvidia,restrict-voltage-switch;
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_iopad_default>;
-
-		pinctrl_iopad_default: iopad-defaults {
+		iopad-defaults {
 			sdmmc-io-pads {
 				pins = "sdmmc1", "sdmmc3";
 				nvidia,enable-voltage-switching;
