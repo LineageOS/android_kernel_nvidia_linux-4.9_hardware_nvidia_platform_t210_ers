@@ -1261,6 +1261,7 @@
 		nvidia,cf = <6>;
 		nvidia,ci = <0>;
 		nvidia,cg = <2>;
+		nvidia,idle-override;
 	};
 
 	dfll_cap: dfll-cdev-cap {
